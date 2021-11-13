@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saklar</title>
+</head>
+<body>
+    <div style="max-width: 80%; margin: 0 auto; text-align: center;">
+        <h1>Saklar</h1>
+        <form method="post" action="/" style="max-width: 300px; margin: 0 auto;">
+            <!-- <label for="servoValue">Enter Servo Value</label> -->
+            <!-- <br><br> -->
+            <!-- <input type="number" name="servoValue" placeholder="0-180" min="0" max="180" required> -->
+            <!-- <input type="number" name="servoValue" placeholder="0-180" min="0" max="180" required> -->
+            <!-- <br><br> -->
+            <!-- <input type="submit" value="Submit"> -->
+            <p>Mematikan atau menghidupkan saklar secara manual.</p>
+            <button name="servoValue" type="submit" value="on">ON</button>
+            <button name="servoValue" type="submit" value="off">OFF</button>
+            <br><br><hr>
+            <p>Otomatis menghidupkan saklar selama 30 menit ketika pagi hari atau sensor cahaya menerima banyak cahaya seperti matahari.</p>
+            <button name="servoValue" type="submit" value="auto-on">Auto-ON</button>
+            <button name="servoValue" type="submit" value="auto-off">Auto-OFF</button>
+        </form>
+        <br><hr>
+        <h3>Servo Configured to:</h3>
+        <p>{{ servoValue }}</p>
+        <!-- <p>{{ value }}</p> -->
+        <h3>LDR Value:</h3>
+        <p>{{ ldrValue }}</p>
+        <!-- <p>{{ value }}</p> -->
+    </div>
+</body>
+</html>
